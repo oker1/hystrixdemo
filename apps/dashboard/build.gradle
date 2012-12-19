@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    runtime 'com.netflix.hystrix:hystrix-dashboard:1.1.5'
+}
+
+task libs(type: Sync) {
+    from configurations.runtime
+    into "$buildDir/libs"
+}

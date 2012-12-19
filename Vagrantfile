@@ -26,7 +26,7 @@ Vagrant::Config.run do |config|
   # config.vm.boot_mode = :gui
 
 
-  config.vm.share_folder "war", "/war", "war"
+  config.vm.share_folder "apps", "/apps", "apps"
 
   config.vm.define :dashboard do |config|
     config.vm.network :hostonly, "33.33.33.10"

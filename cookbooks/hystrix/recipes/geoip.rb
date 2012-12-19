@@ -1,8 +1,8 @@
-application "geoip" do
-  path "/opt/geoip"
+application "geoipservice" do
+  path "/opt/geoipservice"
   owner node["tomcat"]["user"]
   group node["tomcat"]["group"]
-  repository "/war/geoipservice.war"
+  repository "/apps/geoipservice/build/libs/geoipservice.war"
   revision "1"
   strategy :java_local_file
 
@@ -10,4 +10,8 @@ application "geoip" do
   end
 
   tomcat
+end
+
+link "/usr/local/share/GeoIP" do
+  to "/usr/share/GeoIP"
 end

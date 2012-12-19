@@ -1,0 +1,6 @@
+[submodule "apps/geoipservice"]
+	path = apps/geoipservice
+	url = https://github.com/oker1/geoipservice.git
+[submodule "apps/turbine"]
+	path = apps/turbine
+	url = https://github.com/Netflix/Turbine.git

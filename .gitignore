@@ -7,4 +7,5 @@ Gemfile.lock
 \#*#
 .*.sw[a-z]
 *.un~
-war
+.gradle*
+/apps/*/build
