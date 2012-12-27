@@ -2,7 +2,7 @@
 git submodule update --init --recursive
 gradle -b apps/dashboard/build.gradle build
 gradle -b apps/geoipservice/build.gradle build
-gradle -b apps/turbine/build.gradle build
+gradle -b apps/turbine/build.gradle turbine-core:jar turbine-web:war
 gradle -b apps/turbine-config/build.gradle build
 vagrant up
 ```
