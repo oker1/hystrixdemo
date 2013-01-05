@@ -6,7 +6,7 @@ repositories {
 }
 
 dependencies {
-    runtime 'com.netflix.hystrix:hystrix-dashboard:1.1.5'
+    runtime 'com.netflix.hystrix:hystrix-dashboard:1.1.7'
 }
 
 task libs(type: Sync) {
