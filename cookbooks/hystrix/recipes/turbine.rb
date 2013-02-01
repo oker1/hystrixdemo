@@ -2,8 +2,8 @@ application "turbine" do
   path "/opt/turbine"
   owner node["tomcat"]["user"]
   group node["tomcat"]["group"]
-  repository "/apps/turbine/turbine-web/build/libs/turbine-web-0.1-SNAPSHOT.war"
-  revision "3"
+  repository "/apps/turbine/turbine-web/build/libs/turbine-web-0.2-SNAPSHOT.war"
+  revision "4"
   strategy :java_local_file
 
   java_webapp do

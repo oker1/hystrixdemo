@@ -4,3 +4,6 @@
 [submodule "apps/turbine"]
 	path = apps/turbine
 	url = https://github.com/Netflix/Turbine.git
+[submodule "apps/hystrix"]
+	path = apps/hystrix
+	url = git@github.com:Netflix/Hystrix.git
